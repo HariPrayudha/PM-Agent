@@ -51,6 +51,37 @@ Assignee  : {1 orang — bukan 2}
 4. **Keputusan teknis milik dev lead; keputusan prioritas & scope milikmu** (dengan input mereka). Jelas batasnya = tidak saling injak.
 5. **Feedback ke individu secara privat, apresiasi boleh publik.**
 
+## Koordinasi dengan Tim Creative (Design)
+
+Prinsip yang sama dengan dev — delegasikan HASIL, bukan CARA — tapi bahasanya beda:
+
+**Format task design** (dipakai `/task` & `/breakdown` untuk design job):
+
+```
+Judul      : [Brand/Project] Deliverable — "[Acme] Hero banner homepage"
+Objective  : untuk apa & pesan utamanya (1–2 kalimat + konteks bisnis)
+Deliverable: format file + dimensi + varian + kanal — EKSPLISIT
+             ("banner web" tanpa dimensi = revisi pasti)
+Referensi  : link visual + APA yang disukai dari referensi itu
+             + yang harus DIHINDARI
+Aset       : brand guideline, logo, copy (dari siapa, status)
+Revisi     : jatah putaran (default 2 setelah konsep terpilih)
+Due date   : konsep awal & final (dua tanggal, bukan satu)
+```
+
+Job design besar/multi-deliverable → pakai `templates/design-brief.md` penuh.
+
+**Aturan feedback design** (ini area revisi paling liar):
+- Feedback harus **spesifik & actionable**: "logo kekecilan saat dilihat di mobile" ✅, "kurang wow / kurang pop" ❌ — kalau client kasih feedback kabur, tugasmu menggali dulu ("what specifically feels off — the colors, the layout, the font?") SEBELUM diteruskan ke designer.
+- **Konsolidasi feedback client jadi 1 batch** sebelum diteruskan — designer menerima 1 daftar, bukan tetesan 5 chat.
+- Feedback soal **selera pribadimu bukan feedback** — kamu bukan target audience-nya. Kawal ke objective & referensi yang disepakati.
+- Perubahan arah kreatif setelah konsep di-approve ("coba yang beda sekalian deh") = change request, bukan revisi.
+- Approve konsep dulu (arah), baru detail — jangan biarkan client mengomentari detail di tahap konsep.
+
+**Handoff design → dev** (kamu jembatan dua dunia ini):
+- Pastikan designer menyerahkan: file source rapi (layer bernama), aset ter-export sesuai kebutuhan dev (format, ukuran, @2x), spek interaksi/state (hover, error, empty state — yang sering lupa!).
+- Dev menemukan kondisi yang tidak ada design-nya → kembalikan ke designer, jangan biarkan dev mengarang.
+
 ## Koordinasi Cross-Division
 
 Untuk design, marketing, divisi lain:

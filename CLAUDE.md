@@ -32,26 +32,37 @@ Playbook mana untuk apa:
 - Menggali kebutuhan client → [playbooks/requirement-gathering.md](playbooks/requirement-gathering.md)
 - Estimasi & deadline → [playbooks/estimation-timeline.md](playbooks/estimation-timeline.md)
 - Draft komunikasi client / situasi sulit (delay, scope creep) → [playbooks/client-communication.md](playbooks/client-communication.md)
-- Briefing tim, format task ClickUp, cross-division → [playbooks/team-coordination.md](playbooks/team-coordination.md)
+- Briefing tim, format task ClickUp, tim creative/design, cross-division → [playbooks/team-coordination.md](playbooks/team-coordination.md)
 - QA, UAT, revisi, definition of done → [playbooks/qa-uat-delivery.md](playbooks/qa-uat-delivery.md)
 - Churn, retention, marketing SaaS → [playbooks/saas-metrics.md](playbooks/saas-metrics.md)
 - Konsep dasar (agile, RACI, MoSCoW, stakeholder mapping) → [playbooks/pm-fundamentals.md](playbooks/pm-fundamentals.md)
 
-## Pipeline Web Dev (Flow Baku)
+## 3 Jalur Masuk Pekerjaan (Flow Baku)
 
-Saat ada project web dev baru, pandu Hari lewat pipeline ini dan **selalu beri tahu langkah berikutnya** di akhir setiap langkah:
+Kenali dulu JENIS pekerjaan yang masuk, lalu pandu Hari lewat jalur yang tepat — **selalu beri tahu langkah berikutnya** di akhir setiap langkah:
 
+**A. Project baru (web dev / SaaS)** — jalur penuh:
 ```
 /kickoff <nama>   → intake + brief.md + update _INDEX.md
 /prd <nama>       → brief → PRD lengkap (sitemap, fitur, acceptance criteria, open questions EN)
 /breakdown <nama> → PRD → epics & tasks → push ke ClickUp (setelah konfirmasi)
 /timeline <nama>  → milestone + buffer + due date di ClickUp
-— eksekusi —
-/daily            → ringkasan pagi dari ClickUp + draft standup Slack
-/status-report    → progress report EN untuk client
-/risk-check       → audit risiko berkala
-/retro <nama>     → lessons learned saat project selesai
 ```
+
+**B. Project design/creative** (branding, banner set, company profile — untuk tim creative):
+```
+/kickoff <nama>   → tipe design → brief pakai struktur design-brief (BUKAN PRD)
+/breakdown <nama> → pecah per deliverable, format task creative → ClickUp
+/timeline <nama>  → due date konsep & final
+```
+
+**C. Pembaruan di project existing** (update, bug, change request, design job kecil):
+```
+/task [nama]      → klasifikasi (bug/update/CR/design) → task ClickUp yang benar
+```
+`/task` juga pintu registrasi ringan untuk project lama yang belum tercatat di workspace — jangan paksa project existing lewat jalur A.
+
+**Eksekusi harian (semua jalur)**: `/daily` (ringkasan pagi + standup Slack) · `/status-report` (report EN client) · `/risk-check` (audit berkala) · `/retro <nama>` (saat selesai).
 
 Skill pendukung kapan saja: `/translate-brief` (requirement EN → task ID), `/client-email` (draft komunikasi), `/meeting-notes` (rapikan MoM), `/weekly-review` (KPI mingguan).
 

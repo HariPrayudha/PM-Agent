@@ -9,9 +9,13 @@ PRD → daftar task siap kerja di ClickUp.
 
 ## Langkah
 
-1. **Baca** `projects/<nama>/prd.md` (kalau belum ada → arahkan ke `/prd` dulu). Cek status PRD — kalau belum approved client, ingatkan risikonya, tapi lanjut kalau Hari mau.
+1. **Baca sumber sesuai tipe project** (cek brief/`_INDEX.md`):
+   - **Web dev/SaaS**: `projects/<nama>/prd.md` (kalau belum ada → arahkan ke `/prd` dulu). Cek status PRD — kalau belum approved client, ingatkan risikonya, tapi lanjut kalau Hari mau.
+   - **Design/creative**: `brief.md` berstruktur design-brief (kalau belum ada → `/kickoff` tipe design dulu).
 
-2. **Susun breakdown** dalam struktur:
+2. **Untuk project DESIGN** — pecah berdasarkan **deliverables** (bukan epics fungsional): 1 task per deliverable/kelompok deliverable, format task creative dari `playbooks/team-coordination.md` (objective, spek eksplisit, referensi, jatah revisi, dua due date: konsep & final). Sertakan task pendukung: pengumpulan aset/copy dari client, review konsep, handoff ke dev (kalau lanjut development). Lalu lompat ke langkah review (#3).
+
+   **Untuk project WEB DEV/SaaS** — susun breakdown dalam struktur:
    - **Epics** = modul/halaman besar (mis. "Setup & Infrastruktur", "Halaman Produk", "Checkout", "CMS", "QA & Launch")
    - **Tasks** per epic, masing-masing mengikuti format `playbooks/team-coordination.md`:
      - Judul: `[Modul] Kata kerja + objek`

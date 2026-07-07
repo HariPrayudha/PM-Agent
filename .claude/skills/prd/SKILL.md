@@ -10,6 +10,7 @@ Ubah brief menjadi PRD yang siap di-approve client dan siap di-breakdown jadi ta
 ## Langkah
 
 1. **Baca konteks**: `projects/<nama>/brief.md` (wajib — kalau belum ada, arahkan ke `/kickoff` dulu), `stakeholders.md`, dan profil client di `clients/` kalau ada. Kalau ada requirement mentah dari client (EN), baca juga.
+   ⚠️ Kalau project bertipe **design/creative**: PRD bukan dokumen yang tepat — arahkan ke design brief (`templates/design-brief.md`, biasanya sudah dibuat `/kickoff` tipe design) lalu `/breakdown`. Jangan paksa struktur PRD untuk design job.
 
 2. **Identifikasi gap**: bandingkan informasi yang ada vs yang dibutuhkan template `templates/prd.md`. Buat daftar gap, pisahkan:
    - **Bisa dijawab Hari sekarang** → tanya langsung (maks 1–2 putaran, kelompokkan pertanyaan).
