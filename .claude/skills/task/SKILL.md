@@ -9,7 +9,7 @@ Pekerjaan masuk (apapun bentuknya) → task ClickUp yang benar, tercatat rapi. J
 
 ## Langkah
 
-1. **Terima input**: minta Hari paste permintaannya (email/Slack/chat client, EN atau ID, atau ide internal). Tanya project terkait kalau tidak disebut — tampilkan daftar dari `projects/_INDEX.md`.
+1. **Terima input**: minta Hari paste permintaannya — umumnya dari **chat grup WhatsApp** (DPA/client), bisa juga email, ClickUp comment, atau ide internal. EN atau ID. Tanya project terkait kalau tidak disebut — tampilkan daftar dari `projects/_INDEX.md`.
 
 2. **Kalau project belum terdaftar** (project lama/existing yang belum ada foldernya):
    - Tawarkan **registrasi ringan** (bukan kickoff penuh): buat `projects/<nama>/` dari `_TEMPLATE`, isi brief singkat retroaktif — cukup: sistemnya apa, stack, status (live/maintenance), kontak client, link repo & ClickUp list. Tanya seperlunya (1 putaran), sisanya tandai `{belum dicatat}`.

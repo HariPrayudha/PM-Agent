@@ -17,6 +17,7 @@ Komunikasi client EN yang profesional, dengan tone yang tepat untuk situasinya.
 
 4. **Draft dengan aturan**:
    - Concise, to the point (client SG), warm secukupnya
+   - Format default: **teks siap paste ke grup WhatsApp** (DPA+client bareng) — paragraf pendek, tanpa subject line/salam surat formal, tetap professional English. Kalau memang untuk dokumen formal terpisah (invoice, sign-off resmi), pakai format email.
    - Satu pesan satu tujuan; kebutuhan aksi eksplisit + tanggal (dengan SGT)
    - Bad news → selalu bersama mitigasi; minta maaf maksimal 1x
    - Scope tambahan → "yes, and here's the cost", bukan "no"
@@ -25,4 +26,4 @@ Komunikasi client EN yang profesional, dengan tone yang tepat untuk situasinya.
 
 5. **Sajikan**: draft + 1–2 kalimat penjelasan tone yang dipakai & kenapa (ini bagian belajarnya Hari). Kalau situasinya sensitif, beri 2 varian (lebih tegas / lebih lunak).
 
-6. **Setelah final**: tawarkan kirim via Slack MCP (konfirmasi dulu) atau siap paste ke email. Arsipkan pesan penting ke `projects/<nama>/client-comms/{tanggal}-{topik}.md`. Kalau mengandung keputusan → ingatkan catat di `decisions.md`.
+6. **Setelah final**: berikan versi siap paste untuk **grup WA** (kanal utama — belum ada otomasi, Hari paste manual). JANGAN tawarkan kirim via Slack — Slack cuma internal tim, tidak menjangkau client/DPA. Arsipkan pesan penting ke `projects/<nama>/client-comms/{tanggal}-{topik}.md`. Kalau mengandung keputusan → ingatkan catat di `decisions.md`.

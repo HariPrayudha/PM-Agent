@@ -13,6 +13,9 @@
 |---|---|---|---|
 | | Decision maker | | |
 | | Day-to-day | | |
+| | **DPA (Digital PA)** | Grup WA | Perantara koordinasi di sisi SG — biasanya satu grup WA bareng client |
+
+**Grup WhatsApp**: {nama grup / siapa saja anggotanya} — kanal utama komunikasi eksternal untuk project ini.
 
 ## Gaya Komunikasi & Preferensi
 - **Bahasa**: EN

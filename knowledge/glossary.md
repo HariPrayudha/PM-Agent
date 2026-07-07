@@ -26,6 +26,7 @@
 | Retro(spective) | Evaluasi pasca-project | Blameless |
 | Lead time | Waktu dari permintaan → selesai | |
 | Dependency | Ketergantungan | Termasuk dependensi ke client! |
+| DPA (Digital PA) | Agent/perantara di sisi client SG yang menangani koordinasi dengan agency | Bukan istilah PM umum — istilah internal tim Hari. Komunikasi biasanya di grup WA bareng client. |
 
 ## Frasa yang sering muncul dari client SG
 
