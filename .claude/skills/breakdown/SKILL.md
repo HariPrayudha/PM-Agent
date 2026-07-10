@@ -1,11 +1,11 @@
 ---
 name: breakdown
-description: Pecah PRD menjadi epics & tasks (deskripsi ID untuk tim, acceptance criteria, estimasi, prioritas) lalu push langsung ke ClickUp via MCP setelah konfirmasi. Pakai setelah PRD approved.
+description: Pecah PRD menjadi epics & tasks (deskripsi ID untuk tim, acceptance criteria, estimasi, prioritas) lalu siapkan draft siap kirim ke tim via Slack setelah konfirmasi. TIDAK push ke ClickUp. Pakai setelah PRD approved.
 ---
 
 # /breakdown <nama-project>
 
-PRD → daftar task siap kerja di ClickUp.
+PRD → daftar task siap kerja, didistribusikan ke tim lewat Slack (bukan ClickUp — Hari cuma penerima task di ClickUp, lihat `CLAUDE.md`).
 
 ## Langkah
 
@@ -27,11 +27,9 @@ PRD → daftar task siap kerja di ClickUp.
 
 3. **Tampilkan seluruh breakdown ke Hari** dalam bentuk ringkas (tabel per epic) → minta review: ada yang kurang? urutan oke? Iterasi sampai Hari puas.
 
-4. **Push ke ClickUp** (hanya setelah konfirmasi eksplisit):
-   - Tanya Hari: push ke Space/Folder/List ClickUp yang mana? (tampilkan pilihan dari MCP kalau bisa list)
-   - Buat task via ClickUp MCP: judul, deskripsi (konteks+AC), prioritas. Assignee & due date bisa menyusul (via `/timeline`).
-   - Tampilkan hasil: berapa task terbuat + link.
-   - **Kalau MCP tidak tersedia/error**: output markdown lengkap siap copy-paste + ingatkan autentikasi via `/mcp` (lihat SETUP.md).
+4. **Siapkan draft siap kirim ke Slack** (hanya setelah konfirmasi eksplisit):
+   - Format pesan per task/epic supaya bisa langsung dipaste ke channel Slack tim (judul, konteks+AC, prioritas). Assignee & due date bisa menyusul (via `/timeline`).
+   - **JANGAN push/buat task ke ClickUp** — Hari di ClickUp hanya penerima task (dari DPA/pihak luar), bukan pembuat. Kalau Hari eksplisit minta push ke ClickUp, konfirmasi ulang dulu karena ini di luar konvensi biasa.
 
 5. **Simpan salinan** breakdown ke `projects/<nama>/breakdown.md` (jejak lokal).
 

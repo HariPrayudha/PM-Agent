@@ -45,22 +45,24 @@ Kenali dulu JENIS pekerjaan yang masuk, lalu pandu Hari lewat jalur yang tepat �
 ```
 /kickoff <nama>   → intake + brief.md + update _INDEX.md
 /prd <nama>       → brief → PRD lengkap (sitemap, fitur, acceptance criteria, open questions EN)
-/breakdown <nama> → PRD → epics & tasks → push ke ClickUp (setelah konfirmasi)
-/timeline <nama>  → milestone + buffer + due date di ClickUp
+/breakdown <nama> → PRD → epics & tasks → draft siap kirim ke tim via Slack (setelah konfirmasi)
+/timeline <nama>  → milestone + buffer + due date → dikomunikasikan via Slack, dicatat di timeline.md
 ```
 
 **B. Project design/creative** (branding, banner set, company profile — untuk tim creative):
 ```
 /kickoff <nama>   → tipe design → brief pakai struktur design-brief (BUKAN PRD)
-/breakdown <nama> → pecah per deliverable, format task creative → ClickUp
+/breakdown <nama> → pecah per deliverable, format task creative → draft siap kirim via Slack
 /timeline <nama>  → due date konsep & final
 ```
 
 **C. Pembaruan di project existing** (update, bug, change request, design job kecil):
 ```
-/task [nama]      → klasifikasi (bug/update/CR/design) → task ClickUp yang benar
+/task [nama]      → klasifikasi (bug/update/CR/design) → draft task siap kirim via Slack
 ```
 `/task` juga pintu registrasi ringan untuk project lama yang belum tercatat di workspace — jangan paksa project existing lewat jalur A.
+
+> **Catatan penting**: task untuk tim internal TIDAK dibuat/di-push ke ClickUp oleh agent ini — lihat [Aturan Kanal Komunikasi](#aturan-kanal-komunikasi). Semua skill di atas berhenti di "draft siap kirim", Hari yang mem-post ke Slack.
 
 **Eksekusi harian (semua jalur)**: `/daily` (ringkasan pagi + standup Slack) · `/status-report` (report EN client) · `/risk-check` (audit berkala) · `/retro <nama>` (saat selesai).
 
@@ -80,9 +82,9 @@ Tiga kanal, tiga fungsi berbeda — **jangan pernah tertukar**:
 
 | Kanal | Siapa di sana | MCP/Otomasi | Aturan |
 |---|---|---|---|
-| **Slack** | HANYA tim internal Hari (dev/creative) — **client/DPA tidak pernah ada di sini** | Aktif | Baca bebas. Tulis (kirim pesan) → preview + konfirmasi dulu. Dipakai untuk: `/daily` standup, koordinasi tim. |
+| **Slack** | HANYA tim internal Hari (dev/creative) — **client/DPA tidak pernah ada di sini** | Aktif | Baca bebas. Tulis (kirim pesan) → preview + konfirmasi dulu. Dipakai untuk: `/daily` standup, koordinasi tim, **dan assign/komunikasi task ke tim internal** (pengganti ClickUp — lihat baris ClickUp). |
 | **WhatsApp** (grup DPA+client) | DPA & client bareng dalam satu grup | **Tidak ada** — tidak diotomasi | Kanal utama semua komunikasi eksternal. Skill (`/client-email`, `/status-report`) selalu menghasilkan **teks siap paste**, Hari yang kirim manual. JANGAN pernah sarankan "kirim via Slack" untuk pesan yang ditujukan ke client/DPA. |
-| **ClickUp** | **Lintas organisasi** — kantor Hari DAN DPA sama-sama bisa lihat | Aktif | Baca bebas. Tulis (buat/update task, komentar) → preview + konfirmasi **WAJIB**, lebih ketat dari Slack — task/komentar di sini terlihat pihak luar (DPA), jadi bahasa harus jelas & profesional, hindari catatan internal yang kasual/nyeleneh. |
+| **ClickUp** | **Lintas organisasi** — kantor Hari DAN DPA sama-sama bisa lihat | Aktif | Baca bebas — pantau status, due date, komentar. **JANGAN PERNAH buat/push task baru atau update task ke ClickUp**, walau sudah preview+konfirmasi. Hari di ClickUp posisinya **penerima task, bukan pembuat task** (task dibuat DPA/pihak luar). Kalau ada kebutuhan task untuk tim internal → arahkan ke Slack (lihat baris Slack), bukan ClickUp. |
 
 Kalau MCP belum ter-autentikasi / error: tetap hasilkan output markdown yang siap copy-paste, lalu beri tahu Hari cara autentikasi (`/mcp`).
 

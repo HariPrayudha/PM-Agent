@@ -1,6 +1,6 @@
 ---
 name: timeline
-description: Susun timeline & milestone project dari breakdown + estimasi tim + kapasitas, dengan buffer 20-30%, lalu set due date di ClickUp. Pakai setelah /breakdown dan estimasi dev masuk.
+description: Susun timeline & milestone project dari breakdown + estimasi tim + kapasitas, dengan buffer 20-30%, lalu komunikasikan due date via Slack (TIDAK set due date di ClickUp). Pakai setelah /breakdown dan estimasi dev masuk.
 ---
 
 # /timeline <nama-project>
@@ -28,6 +28,6 @@ Breakdown + estimasi → milestone & deadline yang bisa ditepati.
 
 5. **Tulis `timeline.md`** project (format template) + update baris project di `projects/_INDEX.md` (next milestone + deadline).
 
-6. **Set due date di ClickUp** (setelah konfirmasi eksplisit): update task/epic dengan due date sesuai timeline. Tampilkan preview perubahan dulu. Fallback: tabel manual kalau MCP off.
+6. **Komunikasikan due date via Slack** (setelah konfirmasi eksplisit): siapkan draft pesan due date per task/epic sesuai timeline, siap paste ke channel tim. **JANGAN update due date di ClickUp** — Hari hanya penerima task di ClickUp, bukan pengelola.
 
 7. **Tutup dengan langkah berikutnya**: kickoff meeting tim (walkthrough PRD + timeline) & kickoff call client — tawarkan buatkan agenda keduanya. Setelah itu ritme harian: `/daily`.

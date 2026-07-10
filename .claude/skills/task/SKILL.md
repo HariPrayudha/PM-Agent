@@ -1,11 +1,11 @@
 ---
 name: task
-description: Intake universal pekerjaan masuk yang BUKAN project baru penuh — pembaruan/bug/change request di project existing, atau design job untuk tim creative. Klasifikasi, format task yang benar, push ke ClickUp. Termasuk registrasi ringan project lama yang belum tercatat.
+description: Intake universal pekerjaan masuk yang BUKAN project baru penuh — pembaruan/bug/change request di project existing, atau design job untuk tim creative. Klasifikasi, format task yang benar, draft siap kirim via Slack (TIDAK push ke ClickUp). Termasuk registrasi ringan project lama yang belum tercatat.
 ---
 
 # /task [nama-project]
 
-Pekerjaan masuk (apapun bentuknya) → task ClickUp yang benar, tercatat rapi. Jalur cepat — bukan semua pekerjaan butuh `/kickoff` + PRD.
+Pekerjaan masuk (apapun bentuknya) → draft task yang benar, tercatat rapi, siap dikirim ke tim lewat Slack. Jalur cepat — bukan semua pekerjaan butuh `/kickoff` + PRD.
 
 ## Langkah
 
@@ -30,6 +30,6 @@ Pekerjaan masuk (apapun bentuknya) → task ClickUp yang benar, tercatat rapi. J
    - **Design/creative** (format section "Koordinasi dengan Tim Creative"): objective + konteks bisnis, deliverable dengan spek eksplisit (format, dimensi, varian, kanal), referensi visual, sumber copy/aset, jatah revisi, due date. Kalau job design besar/multi-deliverable → sarankan `templates/design-brief.md` penuh + `/kickoff` tipe design.
    - Requirement EN → deskripsi task tetap ID (maksud, bukan terjemahan literal — `knowledge/glossary.md`).
 
-6. **Preview → konfirmasi → push ke ClickUp** via MCP (tanya list tujuan: list project atau list tim creative). Fallback: markdown copy-paste + ingatkan `/mcp`.
+6. **Preview → konfirmasi → draft siap kirim via Slack** (format siap paste ke channel tim yang relevan). **JANGAN push/buat task ke ClickUp** — Hari hanya penerima task di ClickUp (dari DPA/pihak luar), bukan pembuat.
 
 7. **Catat jejak**: permintaan penting/CR → arsip ke `projects/<nama>/client-comms/{tanggal}-{topik}.md`; keputusan scope → `decisions.md`; kalau deadline project terpengaruh → ingatkan update `timeline.md` + `_INDEX.md`.
